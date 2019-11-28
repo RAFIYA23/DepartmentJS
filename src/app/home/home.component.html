@@ -1,0 +1,21 @@
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>DEPTNO</th>
+            <th>DEPTNAME</th>
+            <th>DEPTLoc</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dept of depts">
+            <td>{{dept.deptno}}</td>
+            <td>{{dept.dname}}</td>
+            <td>{{dept.loc}}</td>
+            <td><a href="edit/{{dept.deptno}}">Edit</a></td>
+            <td><a href="delete/{{dept.deptno}}">Delete</a></td>
+        </tr>
+    </tbody>
+</table>
+
